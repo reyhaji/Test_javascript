@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>image viewer</title>
+    </head>
+    <body>
+        <p>Form</p>
+        <h1>viewer</h1>
+        <form>
+            <label >Number of Image</label>
+            <input type="text" id="text" placeholder="4">
+            <button onclick="mytest()">display Image</button>
+
+            <h1>Image</h1>
+            <div id="" >
+            <table  border="1">
+                <tr>
+                    <td><img src="suza lebo.jpg"  width="100" height="100"></td>
+                    <td><img src="profile.png"  width="100" height="100"></td>
+                </tr>
+                <tr>
+                    <td> <img src="in.png"  width="100" height="100"></td>
+                    <td><img src="tiwtter.png"  width="100" height="100"></td>
+                </tr>
+            </table>
+        </div id="btn">
+        </form>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+            document.querySelector('form').onclick = function(){
+                const x =  document.querySelector('#text').value;
+                if(x % 2 == 0){
+    document.querySelector("btn").innerHTML=onclick(function());
+} else{
+    document.querySelector("btn").innerHTML= "invalid image";
+    alert("invalid image") 
+}
+            };
+            });
+        </script>
+    </body>
+</html>
